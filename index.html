@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ...existing code... -->
+    <link href="/src/styles.css" rel="stylesheet">
+    <!-- ...existing code... -->
+</head>
+<body>
+    <!-- ...existing code... -->
+    <section class="h-screen flex flex-col items-center justify-center bg-gradient-to-r from-blue-600 to-indigo-900 text-white text-center">
+        <h1 class="text-5xl md:text-6xl font-extrabold">Hi, I'm John Bennette</h1>
+        <p class="mt-4 text-lg md:text-xl">Welcome to my personal portfolio</p>
+        <a href="/john_bennette_it_resume.pdf" class="mt-6 px-6 py-3 bg-orange-500 hover:bg-orange-700 text-lg font-bold rounded shadow-lg transition" download>
+            Download Resume
+        </a>
+    </section>
+    <!-- ...existing code... -->
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div class="card">
+                <img src="/path-to-gargle-it-image.jpg" alt="Gargle It" class="project-img">
+                <h3 class="project-title">Gargle It App</h3>
+                <p class="project-description">An AI-powered dental communication app. Coming soon!</p>
+                <div class="project-links">
+                    <a href="github-link" class="github-link">GitHub</a>
+                    <a href="live-demo-link" class="live-demo-link">Live Demo</a>
+                </div>
+            </div>
+            <!-- Repeat similar blocks for other projects -->
+        </div>
+    </section>
+    <!-- ...existing code... -->
+    <!-- About Me Section -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto text-center">
+            <img src="/Johns_new_profile_pic.JPG" alt="Profile Picture" class="w-32 h-32 rounded-full mx-auto border-4 border-blue-500">
+            <h2 class="text-3xl font-bold mt-4">About Me</h2>
+            <p class="mt-4 text-gray-700 leading-relaxed max-w-2xl mx-auto">
+                I am a passionate developer with a strong foundation in web development, AI solutions, and problem-solving.
+                Beyond coding, I explore AI-driven automation to create impactful, ethical, and sustainable solutions.
+            </p>
+        </div>
+    </section>
+    <!-- Resume Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center">Resume</h2>
+            <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="font-bold text-lg">Education</h3>
+                    <ul class="mt-4 list-disc list-inside space-y-2">
+                        <li>Chemeketa Community College - Associate of Arts Oregon Transfer (2018)</li>
+                        <li>Eastern Oregon University - Bachelor of Science in Liberal Studies (2020)</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg">Work Experience</h3>
+                    <ul class="mt-4 list-disc list-inside space-y-2">
+                        <li>ISS3 Tier 1/Operations Analyst (Temporary)</li>
+                        <li>IT Support Specialist (Contracted)</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg">Certifications</h3>
+                    <ul class="mt-4 list-disc list-inside space-y-2">
+                        <li>Certified React Developer</li>
+                        <li>Full Stack Web Development Certification</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Projects Section -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center">My Projects</h2>
+            <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="bg-white p-6 rounded shadow hover:shadow-lg transition">
+                    <img src="/path-to-project1.jpg" alt="Project 1" class="rounded">
+                    <h3 class="font-bold text-lg mt-4">Skeptic's Songbook</h3>
+                    <p class="mt-2 text-gray-600">
+                        Music for skeptics and thinkers. Explore logic and critical thinking through songs.
+                    </p>
+                    <div class="mt-4">
+                        <a href="https://github.com" class="text-blue-500 hover:text-blue-700">GitHub</a> |
+                        <a href="https://demo.com" class="text-blue-500 hover:text-blue-700">Live Demo</a>
+                    </div>
+                </div>
+                <!-- Repeat similar blocks for other projects -->
+            </div>
+        </div>
+    </section>
+    <!-- Contact Me Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center">Contact Me</h2>
+            <form class="mt-8 max-w-lg mx-auto space-y-4">
+                <input type="text" placeholder="Name" class="w-full p-3 border rounded">
+                <input type="email" placeholder="Email" class="w-full p-3 border rounded">
+                <textarea placeholder="Message" class="w-full p-3 border rounded"></textarea>
+                <button type="submit" class="w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 rounded transition">
+                    Send Message
+                </button>
+            </form>
+        </div>
+    </section>
+    <!-- ...existing code... -->
+</body>
+</html>
