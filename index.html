@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ...existing code... -->
+    <link href="/src/styles.css" rel="stylesheet">
+    <!-- ...existing code... -->
+</head>
+<body class="bg-white text-black dark:bg-gray-900 dark:text-white">
+    <!-- Navbar -->
+    <nav class="p-4 bg-gray-800 text-white flex justify-between items-center">
+        <div class="text-lg font-bold">My Portfolio</div>
+        <div class="space-x-4 hidden md:flex">
+            <a href="#portfolio" class="hover:text-gray-400">Portfolio</a>
+            <a href="#about" class="hover:text-gray-400">About Me</a>
+            <a href="#resume" class="hover:text-gray-400">Resume</a>
+            <a href="#contact" class="hover:text-gray-400">Contact Me</a>
+        </div>
+        <button id="theme-toggle" class="bg-gray-700 p-2 rounded">Toggle Dark Mode</button>
+        <button id="menu-toggle" class="md:hidden p-2 rounded bg-gray-700">Menu</button>
+    </nav>
+    <div id="mobile-menu" class="hidden md:hidden bg-gray-800 text-white p-4 space-y-2">
+        <a href="#portfolio" class="block hover:text-gray-400">Portfolio</a>
+        <a href="#about" class="block hover:text-gray-400">About Me</a>
+        <a href="#resume" class="block hover:text-gray-400">Resume</a>
+        <a href="#contact" class="block hover:text-gray-400">Contact Me</a>
+    </div>
+    <!-- Hero Section -->
+    <section class="h-screen flex flex-col items-center justify-center bg-gradient-to-r from-blue-600 to-indigo-900 text-white text-center">
+        <h1 class="text-5xl md:text-6xl font-extrabold">Hi, I'm John Bennette</h1>
+        <p class="mt-4 text-lg md:text-xl">Welcome to my personal portfolio</p>
+        <a href="/john_bennette_it_resume.pdf" class="mt-6 px-6 py-3 bg-orange-500 hover:bg-orange-700 text-lg font-bold rounded shadow-lg transition" download>
+            Download Resume
+        </a>
+    </section>
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-16 bg-gray-100 dark:bg-gray-800">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center">Portfolio</h2>
+            <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Portfolio Item 1 -->
+                <div class="bg-white dark:bg-gray-700 p-6 rounded shadow hover:shadow-lg transition">
+                    <img src="/path-to-gargle-it-image.jpg" alt="Gargle It" class="rounded">
+                    <h3 class="font-bold text-lg mt-4">Gargle It App</h3>
+                    <p class="mt-2 text-gray-600 dark:text-gray-300">An AI-powered dental communication app. Coming soon!</p>
+                    <div class="mt-4">
+                        <a href="github-link" class="text-blue-500 hover:text-blue-700">GitHub</a> |
+                        <a href="live-demo-link" class="text-blue-500 hover:text-blue-700">Live Demo</a>
+                    </div>
+                </div>
+                <!-- Repeat similar blocks for other projects -->
+            </div>
+        </div>
+    </section>
+    <!-- About Me Section -->
+    <section id="about" class="py-16 bg-gray-100 dark:bg-gray-800">
+        <div class="container mx-auto text-center">
+            <img src="/Johns_new_profile_pic.JPG" alt="Profile Picture" class="w-32 h-32 rounded-full mx-auto border-4 border-blue-500">
+            <h2 class="text-3xl font-bold mt-4">About Me</h2>
+            <p class="mt-4 text-gray-700 dark:text-gray-300 leading-relaxed max-w-2xl mx-auto">
+                I am a passionate developer with a strong foundation in web development, AI solutions, and problem-solving.
+                Beyond coding, I explore AI-driven automation to create impactful, ethical, and sustainable solutions.
+            </p>
+        </div>
+    </section>
+    <!-- Resume Section -->
+    <section id="resume" class="py-16 bg-white dark:bg-gray-900">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center">Resume</h2>
+            <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="font-bold text-lg">Education</h3>
+                    <ul class="mt-4 list-disc list-inside space-y-2">
+                        <li>Chemeketa Community College - Associate of Arts Oregon Transfer (2018)</li>
+                        <li>Eastern Oregon University - Bachelor of Science in Liberal Studies (2020)</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg">Work Experience</h3>
+                    <ul class="mt-4 list-disc list-inside space-y-2">
+                        <li>ISS3 Tier 1/Operations Analyst (Temporary)</li>
+                        <li>IT Support Specialist (Contracted)</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg">Certifications</h3>
+                    <ul class="mt-4 list-disc list-inside space-y-2">
+                        <li>Certified React Developer</li>
+                        <li>Full Stack Web Development Certification</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Projects Section -->
+    <section class="py-16 bg-gray-100 dark:bg-gray-800">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center">My Projects</h2>
+            <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="bg-white dark:bg-gray-700 p-6 rounded shadow hover:shadow-lg transition">
+                    <img src="/path-to-project1.jpg" alt="Project 1" class="rounded">
+                    <h3 class="font-bold text-lg mt-4">Skeptic's Songbook</h3>
+                    <p class="mt-2 text-gray-600 dark:text-gray-300">
+                        Music for skeptics and thinkers. Explore logic and critical thinking through songs.
+                    </p>
+                    <div class="mt-4">
+                        <a href="https://github.com" class="text-blue-500 hover:text-blue-700">GitHub</a> |
+                        <a href="https://demo.com" class="text-blue-500 hover:text-blue-700">Live Demo</a>
+                    </div>
+                </div>
+                <!-- Repeat similar blocks for other projects -->
+            </div>
+        </div>
+    </section>
+    <!-- Contact Me Section -->
+    <section id="contact" class="py-16 bg-white dark:bg-gray-900">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold">Contact Me</h2>
+            <p class="mt-4 text-lg">Email: <a href="mailto:info@willamettevalleypropertycare.com" class="text-blue-500 hover:text-blue-700">info@willamettevalleypropertycare.com</a></p>
+            <form class="mt-8 max-w-lg mx-auto space-y-4">
+                <input type="text" placeholder="Name" class="w-full p-3 border rounded">
+                <input type="email" placeholder="Email" class="w-full p-3 border rounded">
+                <textarea placeholder="Message" class="w-full p-3 border rounded"></textarea>
+                <button type="submit" class="w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 rounded transition">
+                    Send Message
+                </button>
+            </form>
+        </div>
+    </section>
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto text-center space-y-4">
+            <h2 class="text-xl font-bold">Follow Me</h2>
+            <div class="flex justify-center space-x-4">
+                <a href="https://patreon.com" target="_blank" class="hover:text-gray-400">Patreon</a>
+                <a href="https://youtube.com" target="_blank" class="hover:text-gray-400">YouTube</a>
+                <a href="https://pinterest.com" target="_blank" class="hover:text-gray-400">Pinterest</a>
+                <a href="https://soundcloud.com" target="_blank" class="hover:text-gray-400">SoundCloud</a>
+                <a href="https://tiktok.com" target="_blank" class="hover:text-gray-400">TikTok</a>
+                <a href="https://linktr.ee" target="_blank" class="hover:text-gray-400">Linktree</a>
+                <a href="https://bsky.app" target="_blank" class="hover:text-gray-400">Bluesky</a>
+                <a href="https://linkedin.com" target="_blank" class="hover:text-gray-400">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+    <!-- ...existing code... -->
+    <script>
+        const themeToggle = document.getElementById('theme-toggle');
+        const html = document.documentElement;
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        themeToggle.addEventListener('click', () => {
+            html.classList.toggle('dark');
+        });
+
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
