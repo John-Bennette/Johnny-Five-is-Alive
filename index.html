@@ -1,60 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="John Bennette - AI Developer & Innovator">
+    <meta name="description" content="Passionate developer creating AI solutions, modern web experiences, and impactful projects.">
+    <meta name="keywords" content="AI development, portfolio, React developer, full-stack developer">
+    <meta name="author" content="John Bennette">
+    <meta property="og:title" content="John Bennette's Portfolio">
+    <meta property="og:description" content="Welcome to John Bennette's personal portfolio. Explore my projects, resume, and contact information.">
+    <meta property="og:image" content="/path-to-social-image.jpg">
+    <meta property="og:url" content="https://your-portfolio-url.com">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="John Bennette's Portfolio">
+    <meta name="twitter:description" content="Welcome to John Bennette's personal portfolio. Explore my projects, resume, and contact information.">
+    <meta name="twitter:image" content="/path-to-social-image.jpg">
+    <title>John Bennette's Portfolio</title>
+    <link rel="stylesheet" href="dist/assets/index.css">
+    
     <!-- ...existing code... -->
-    <link href="/src/styles.css" rel="stylesheet">
-    <!-- ...existing code... -->
+  <link rel="stylesheet" href="./assets/index-ad94d558.css">
 </head>
 <body class="bg-white text-black dark:bg-gray-900 dark:text-white">
-    <!-- Navbar -->
-    <nav class="p-4 bg-gray-800 text-white flex justify-between items-center">
-        <div class="text-lg font-bold">My Portfolio</div>
-        <div class="space-x-4 hidden md:flex">
-            <a href="#portfolio" class="hover:text-gray-400">Portfolio</a>
-            <a href="#about" class="hover:text-gray-400">About Me</a>
-            <a href="#resume" class="hover:text-gray-400">Resume</a>
-            <a href="#contact" class="hover:text-gray-400">Contact Me</a>
+    <!-- Header -->
+    <header class="bg-gray-800 text-white sticky top-0 z-50 shadow-md">
+        <div class="container mx-auto flex justify-between items-center p-4">
+            <h1 class="text-xl font-bold">My Portfolio</h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="#about" class="hover:text-blue-400">About</a></li>
+                    <li><a href="#portfolio" class="hover:text-blue-400">Portfolio</a></li>
+                    <li><a href="#contact" class="hover:text-blue-400">Contact</a></li>
+                    <li><button id="toggle-dark-mode" class="hover:text-blue-400">Dark Mode</button></li>
+                </ul>
+            </nav>
         </div>
-        <button id="theme-toggle" class="bg-gray-700 p-2 rounded">Toggle Dark Mode</button>
-        <button id="menu-toggle" class="md:hidden p-2 rounded bg-gray-700">Menu</button>
-    </nav>
-    <div id="mobile-menu" class="hidden md:hidden bg-gray-800 text-white p-4 space-y-2">
-        <a href="#portfolio" class="block hover:text-gray-400">Portfolio</a>
-        <a href="#about" class="block hover:text-gray-400">About Me</a>
-        <a href="#resume" class="block hover:text-gray-400">Resume</a>
-        <a href="#contact" class="block hover:text-gray-400">Contact Me</a>
-    </div>
+    </header>
     <!-- Hero Section -->
-    <section class="h-screen flex flex-col items-center justify-center bg-gradient-to-r from-blue-600 to-indigo-900 text-white text-center">
-        <h1 class="text-5xl md:text-6xl font-extrabold">Hi, I'm John Bennette</h1>
-        <p class="mt-4 text-lg md:text-xl">Welcome to my personal portfolio</p>
-        <a href="/john_bennette_it_resume.pdf" class="mt-6 px-6 py-3 bg-orange-500 hover:bg-orange-700 text-lg font-bold rounded shadow-lg transition" download>
-            Download Resume
-        </a>
+    <section id="hero" class="bg-gray-100 text-center py-16">
+        <div class="container mx-auto">
+            <h1 class="text-4xl font-extrabold text-gray-800">Hi, I'm John Bennette</h1>
+            <p class="text-xl text-gray-600 mt-4">Empowering Ideas with Code & AI Solutions</p>
+            <div class="mt-6">
+                <a href="./assets/resume.pdf" class="bg-blue-500 text-white px-6 py-2 rounded hover:bg-blue-600" download>Download Resume</a>
+                <a href="#portfolio" class="bg-gray-700 text-white px-6 py-2 rounded hover:bg-gray-800">View Projects</a>
+            </div>
+        </div>
     </section>
     <!-- Portfolio Section -->
-    <section id="portfolio" class="py-16 bg-gray-100 dark:bg-gray-800">
+    <section id="portfolio" class="bg-white py-12">
         <div class="container mx-auto">
-            <h2 class="text-3xl font-bold text-center">Portfolio</h2>
-            <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <h2 class="text-3xl font-bold text-center mb-6">My Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <!-- Portfolio Item 1 -->
-                <div class="bg-white dark:bg-gray-700 p-6 rounded shadow hover:shadow-lg transition">
-                    <img src="/path-to-gargle-it-image.jpg" alt="Gargle It" class="rounded">
-                    <h3 class="font-bold text-lg mt-4">Gargle It App</h3>
-                    <p class="mt-2 text-gray-600 dark:text-gray-300">An AI-powered dental communication app. Coming soon!</p>
+                <div class="bg-gray-100 shadow-md rounded p-4">
+                    <img src="public/gargle-it-image.jpg" alt="Gargle It" class="w-full h-48 object-cover rounded" loading="lazy">
+                    <h3 class="text-xl font-semibold mt-4">Gargle It App</h3>
+                    <p class="text-gray-600">An AI-powered dental communication app.</p>
                     <div class="mt-4">
-                        <a href="github-link" class="text-blue-500 hover:text-blue-700">GitHub</a> |
-                        <a href="live-demo-link" class="text-blue-500 hover:text-blue-700">Live Demo</a>
+                        <a href="live-demo-link" class="text-blue-500 hover:underline">Live Demo</a>
+                        <a href="github-link" class="text-blue-500 hover:underline ml-4">GitHub</a>
                     </div>
                 </div>
-                <!-- Repeat similar blocks for other projects -->
+                <!-- Project Card 1 -->
+                <div class="bg-gray-100 shadow-md rounded p-4">
+                    <img src="public/project1.jpg" alt="Project 1" class="w-full h-48 object-cover rounded" loading="lazy">
+                    <h3 class="text-xl font-semibold mt-4">Project 1</h3>
+                    <p class="text-gray-600">Description of project 1.</p>
+                    <div class="mt-4">
+                        <a href="https://github.com/username/project1" class="text-blue-500 hover:underline">GitHub</a>
+                    </div>
+                </div>
+                <!-- Project Card 2 -->
+                <div class="bg-gray-100 shadow-md rounded p-4">
+                    <img src="public/project2.jpg" alt="Project 2" class="w-full h-48 object-cover rounded" loading="lazy">
+                    <h3 class="text-xl font-semibold mt-4">Project 2</h3>
+                    <p class="text-gray-600">Description of project 2.</p>
+                    <div class="mt-4">
+                        <a href="https://github.com/username/project2" class="text-blue-500 hover:underline">GitHub</a>
+                    </div>
+                </div>
+                <!-- Project Card 3 -->
+                <div class="bg-gray-100 shadow-md rounded p-4">
+                    <img src="public/project3.jpg" alt="Project 3" class="w-full h-48 object-cover rounded" loading="lazy">
+                    <h3 class="text-xl font-semibold mt-4">Project 3</h3>
+                    <p class="text-gray-600">Description of project 3.</p>
+                    <div class="mt-4">
+                        <a href="https://github.com/username/project3" class="text-blue-500 hover:underline">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="bg-white py-12">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center text-primary">My Projects</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+                <div class="bg-gray-50 shadow-lg rounded-lg p-4">
+                    <img src="public/project1.jpg" alt="Project 1" class="rounded-lg">
+                    <h3 class="text-xl font-semibold mt-4">Project 1</h3>
+                    <p class="mt-2">Description of Project 1.</p>
+                    <a href="https://github.com/john-bennette/project1" class="text-blue-500 underline mt-4 inline-block">GitHub</a>
+                </div>
+                <!-- Repeat similar cards for other projects -->
             </div>
         </div>
     </section>
     <!-- About Me Section -->
     <section id="about" class="py-16 bg-gray-100 dark:bg-gray-800">
         <div class="container mx-auto text-center">
-            <img src="/Johns_new_profile_pic.JPG" alt="Profile Picture" class="w-32 h-32 rounded-full mx-auto border-4 border-blue-500">
+            <img src="public/profile-pic.jpg" alt="Profile Picture" class="w-32 h-32 rounded-full mx-auto border-4 border-blue-500" loading="lazy">
             <h2 class="text-3xl font-bold mt-4">About Me</h2>
             <p class="mt-4 text-gray-700 dark:text-gray-300 leading-relaxed max-w-2xl mx-auto">
                 I am a passionate developer with a strong foundation in web development, AI solutions, and problem-solving.
@@ -89,57 +146,55 @@
                     </ul>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- Projects Section -->
-    <section class="py-16 bg-gray-100 dark:bg-gray-800">
-        <div class="container mx-auto">
-            <h2 class="text-3xl font-bold text-center">My Projects</h2>
-            <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Project 1 -->
-                <div class="bg-white dark:bg-gray-700 p-6 rounded shadow hover:shadow-lg transition">
-                    <img src="/path-to-project1.jpg" alt="Project 1" class="rounded">
-                    <h3 class="font-bold text-lg mt-4">Skeptic's Songbook</h3>
-                    <p class="mt-2 text-gray-600 dark:text-gray-300">
-                        Music for skeptics and thinkers. Explore logic and critical thinking through songs.
-                    </p>
-                    <div class="mt-4">
-                        <a href="https://github.com" class="text-blue-500 hover:text-blue-700">GitHub</a> |
-                        <a href="https://demo.com" class="text-blue-500 hover:text-blue-700">Live Demo</a>
-                    </div>
-                </div>
-                <!-- Repeat similar blocks for other projects -->
-            </div>
+            <!-- ...existing code... -->
+            <a href="public/john_bennette_resume.pdf" download class="text-primary underline">
+                Download Resume
+            </a>
+            <!-- ...existing code... -->
         </div>
     </section>
     <!-- Contact Me Section -->
-    <section id="contact" class="py-16 bg-white dark:bg-gray-900">
+    <section id="contact" class="bg-gray-800 text-white py-12">
         <div class="container mx-auto text-center">
             <h2 class="text-3xl font-bold">Contact Me</h2>
-            <p class="mt-4 text-lg">Email: <a href="mailto:info@willamettevalleypropertycare.com" class="text-blue-500 hover:text-blue-700">info@willamettevalleypropertycare.com</a></p>
-            <form class="mt-8 max-w-lg mx-auto space-y-4">
-                <input type="text" placeholder="Name" class="w-full p-3 border rounded">
-                <input type="email" placeholder="Email" class="w-full p-3 border rounded">
-                <textarea placeholder="Message" class="w-full p-3 border rounded"></textarea>
-                <button type="submit" class="w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 rounded transition">
-                    Send Message
-                </button>
-            </form>
+            <p class="mt-4">Feel free to reach out for collaborations or inquiries.</p>
+            <p class="mt-2">Email: <a href="mailto:john.bennette@willamettevalleypropertycare.com" class="text-blue-400 hover:underline">john.bennette@willamettevalleypropertycare.com</a></p>
+            <div class="mt-6 flex justify-center space-x-4">
+                <a href="https://www.linkedin.com" target="_blank" class="hover:text-gray-400">
+                    <img src="public/linkedin-icon.png" alt="LinkedIn" class="h-6" loading="lazy">
+                </a>
+            </div>
         </div>
     </section>
     <!-- Footer Section -->
     <footer class="bg-gray-800 text-white py-6">
         <div class="container mx-auto text-center space-y-4">
-            <h2 class="text-xl font-bold">Follow Me</h2>
+            <h2 class="text-xl font-bold">Connect with me:</h2>
             <div class="flex justify-center space-x-4">
-                <a href="https://patreon.com" target="_blank" class="hover:text-gray-400">Patreon</a>
-                <a href="https://youtube.com" target="_blank" class="hover:text-gray-400">YouTube</a>
-                <a href="https://pinterest.com" target="_blank" class="hover:text-gray-400">Pinterest</a>
-                <a href="https://soundcloud.com" target="_blank" class="hover:text-gray-400">SoundCloud</a>
-                <a href="https://tiktok.com" target="_blank" class="hover:text-gray-400">TikTok</a>
-                <a href="https://linktr.ee" target="_blank" class="hover:text-gray-400">Linktree</a>
-                <a href="https://bsky.app" target="_blank" class="hover:text-gray-400">Bluesky</a>
-                <a href="https://linkedin.com" target="_blank" class="hover:text-gray-400">LinkedIn</a>
+                <a href="https://www.patreon.com/c/skepticssongbook" target="_blank" class="hover:text-gray-400">
+                    <img src="public/patreon-icon.png" alt="Patreon" class="h-6" loading="lazy">
+                </a>
+                <a href="https://www.youtube.com/@SkepticsSongbook" target="_blank" class="hover:text-gray-400">
+                    <img src="public/youtube-icon.png" alt="YouTube" class="h-6" loading="lazy">
+                </a>
+                <a href="https://pinterest.com" target="_blank" class="hover:text-gray-400">
+                    <img src="public/pinterest-icon.png" alt="Pinterest" class="h-6" loading="lazy">
+                </a>
+                <a href="https://soundcloud.com" target="_blank" class="hover:text-gray-400">
+                    <img src="public/soundcloud-icon.png" alt="SoundCloud" class="h-6" loading="lazy">
+                </a>
+                <a href="https://tiktok.com" target="_blank" class="hover:text-gray-400">
+                    <img src="public/tiktok-icon.png" alt="TikTok" class="h-6" loading="lazy">
+                </a>
+                <a href="https://linktr.ee" target="_blank" class="hover:text-gray-400">
+                    <img src="public/linktree-icon.png" alt="Linktree" class="h-6" loading="lazy">
+                </a>
+                <a href="https://bsky.app" target="_blank" class="hover:text-gray-400">
+                    <img src="public/bluesky-icon.png" alt="Bluesky" class="h-6" loading="lazy">
+                </a>
+                <a href="https://linkedin.com" target="_blank" class="hover:text-gray-400">
+                    <img src="public/linkedin-icon.png" alt="LinkedIn" class="h-6" loading="lazy">
+                </a>
             </div>
         </div>
     </footer>
@@ -149,14 +204,41 @@
         const html = document.documentElement;
         const menuToggle = document.getElementById('menu-toggle');
         const mobileMenu = document.getElementById('mobile-menu');
+        const toggleDarkMode = document.getElementById('toggle-dark-mode');
+
+        // Check for saved user preference, if any, on load of the website
+        if (localStorage.getItem('theme') === 'dark') {
+            html.classList.add('dark');
+        }
 
         themeToggle.addEventListener('click', () => {
             html.classList.toggle('dark');
+            // Save the user's preference in localStorage
+            if (html.classList.contains('dark')) {
+                localStorage.setItem('theme', 'dark');
+            } else {
+                localStorage.removeItem('theme');
+            }
+        });
+
+        toggleDarkMode.addEventListener('click', () => {
+            document.body.classList.toggle('dark');
+            // Save the user's preference in localStorage
+            if (document.body.classList.contains('dark')) {
+                localStorage.setItem('theme', 'dark');
+            } else {
+                localStorage.removeItem('theme');
+            }
         });
 
         menuToggle.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
         });
+
+        const toggleDarkMode = () => {
+            document.documentElement.classList.toggle('dark');
+        };
+        document.getElementById('dark-mode-toggle').addEventListener('click', toggleDarkMode);
     </script>
 </body>
 </html>
