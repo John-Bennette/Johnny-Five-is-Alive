@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-white text-black;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+body.dark-mode {
+  @apply bg-gray-900 text-white;
+}
+
+h1, h2 {
+  color: #333;
+}
+
+/* Add more global styles here */
