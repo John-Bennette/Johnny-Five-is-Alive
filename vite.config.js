@@ -4,8 +4,8 @@ import path from 'path'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: '/Johnny-five-is-alive/', // Update with your repo name
   plugins: [vue()],
-  base: '/', // Set base to root for local development
   build: {
     outDir: 'dist',
     assetsDir: 'assets'

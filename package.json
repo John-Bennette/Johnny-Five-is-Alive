@@ -1,0 +1,12 @@
+{
+  "name": "profile-build-10",
+  "version": "1.0.0",
+  "description": "Profile build 10",
+  "main": "postcss.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
